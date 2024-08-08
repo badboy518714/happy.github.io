@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <img id="image" src="" alt="图片">
+
+  <script>
+    var imgList = ["img1.webp", "img2.webp", "img3.webp", "img4.webp"];
+    var currentIndex = 0;
+
+    window.onload = function () {
+      document.getElementById("image").src = imgList[currentIndex];
+    };
+
+    window.onunload = function () {
+      currentIndex = (currentIndex + 1) % imgList.length;
+    };
+  </script>
+
+</body>
+
+</html>
