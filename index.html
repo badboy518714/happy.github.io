@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-  <img id="image" src="" alt="图片">
-  <script>
-  var imageList = ["img1.webp", "img2.webp", "img3.webp", "img4.webp"];
-  var currentIndex = 0;
-  window.onload = function () {
-    document.getElementById("image").src = imageList[currentIndex];
-  };
-  window.onbeforeunload = function () {
-    currentIndex = (currentIndex + 1) % imageList.length;
-  };
-  //currentIndex = (currentIndex + 1) % imageList.length;
-  </script>
+    < img src="img1.webp" alt="">
+    <script>
+        // 需求：当我们刷新页面，页面中的图片随机显示不同的图片
+        // 分析：
+        //     ①：随机显示，则需要用到随机函数
+        //     ②：更换图片需要用到图片的 src 属性，进行修改
+        //     ③：核心思路：
+        //         1. 获取图片元素
+        //         2. 随机得到图片序号
+        //         3. 图片.src = 图片随机路径
+ 
+ 
+        // 创建图片数组
+        let arrar_pics = ['img1.webp', 'img2.webp', 'img3.webp', 'img4.webp']
+        // 获取img对象
+        let img = document.querySelector('img')
+        // 生成随机数
+        let random = getRandom(0, arrar_pics.length - 1)
+        // 替换图片
+        img.src = arrar_pics[random]
+ 
+ 
+        // 随机数生成函数
+        function getRandom(min = 0, max = 1) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+    </script>
 </body>
 </html>
 
