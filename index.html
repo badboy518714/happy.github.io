@@ -2,7 +2,11 @@
 <html>
 <body>
   <script type="text/javascript"> 
-    window.location.replace("img3.webp"); 
+    var imageList = ["img1.webp", "img2.webp", "img3.webp", "img4.webp"];
+    var currentIndex = 0;
+    src = imageList[currentIndex];
+    window.location.replace("src"); 
+    currentIndex = (currentIndex + 1) % imageList.length;
   </script>
 </body>
 </html>
