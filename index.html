@@ -6,29 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    < img src="https://badboy518714.github.io/happy.github.io/img1.webp" alt="">
+<body style="background-image: url(img1.webp);">
     <script>
-        // 需求：当我们刷新页面，页面中的图片随机显示不同的图片
+        // 需求：当我们刷新页面，页面中的背景图片随机显示不同的图片
         // 分析：
-        //     ①：随机显示，则需要用到随机函数
-        //     ②：更换图片需要用到图片的 src 属性，进行修改
-        //     ③：核心思路：
-        //         1. 获取图片元素
-        //         2. 随机得到图片序号
-        //         3. 图片.src = 图片随机路径
- 
+        //     ①： 随机函数
+        //     ②： css页面背景图片  background - image
+        //     ③： 标签选择body， 因为body是唯一的标签，可以直接写 document.body.style 
  
         // 创建图片数组
-        let arrar_pics = ['./img1.webp', './img2.webp', './img3.webp', './img4.webp']
-        // 获取img对象
-        let img = document.querySelector('img')
+        let array_pics = ['img1.webp', 'img2.webp', 'img3.webp', 'img4.webp']
         // 生成随机数
-        let random = getRandom(0, arrar_pics.length - 1)
+        let random = getRandom(0, array_pics.length - 1)
+        // 随机获得图片
+        let randompic = array_pics[random]
         // 替换图片
-        img.src = arrar_pics[random]
- 
- 
+        document.body.style.backgroundImage = `url('${randompic}')`
         // 随机数生成函数
         function getRandom(min = 0, max = 1) {
             return Math.floor(Math.random() * (max - min + 1)) + min
