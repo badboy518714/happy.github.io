@@ -3,8 +3,8 @@ name: Update txt file
 on:
   workflow_dispatch:
   schedule:
-    #- cron: '0 2 * * *'  # 每天凌晨2点执行
-    - cron: '*/2 * * * *'  # 每分钟执行
+    - cron: '48 7 * * *'  # 每天凌晨2点执行
+    #- cron: '*/2 * * * *'  # 每分钟执行
 jobs:
   update_txt:
     runs-on: ubuntu-latest
