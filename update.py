@@ -1,7 +1,7 @@
 import os
 
 def update_txt_file():
-    file_path = "data/output.txt"  # 替换为实际的文件路径
+    file_path = "0.txt"  # 替换为实际的文件路径
 
     # 读取文件内容
     with open(file_path, "r") as file:
