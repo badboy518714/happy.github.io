@@ -31,7 +31,7 @@ jobs:
         git push
     - name: Send Slack notification
       if: success()
-      uses: slackapi/github-actions@v2.3.0
+      uses: badboy518714/github-actions@v2.3.0
       env:
         SLACK_ACCESS_TOKEN: ${{ secrets.TOKEN }}
         SLACK_MESSAGE: "TXT file has been updated successfully!"
