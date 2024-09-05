@@ -10,7 +10,10 @@ with open('data/output.txt', 'r') as f:
    a = f.read()
    print(a)
 data = 'hello --- world'
-with open('data/output.txt', 'w') as f:
-   f.write(data)
+try:
+   with open('data/output.txt', 'w') as f:
+      f.write(data)
+except:
+      print('写入失败')     
 print('hello ---1 world')
 print('hello ---2 world')
