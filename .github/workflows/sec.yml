@@ -3,19 +3,19 @@ name: Update txt file
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # 每天凌晨2点执行
-
+    - cron: '0 2 * * *'  # 每天凌晨2点执行 
 jobs:
-  update-txt:
+  update_txt:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'  # 指定您使用的 Python 版本
-    - name: Install dependencies
+    - name: Setup git
       run: |
-        pip install -r requirements.txt
-    - name: Run Python script
-      run: python update.py
+        git config --global user.email "your_email@example.com"
+        git config --global user.name "your_username"
+    - name: Update txt file
+      run: |
+        echo "更新的内容" > 0.txt
+        git add your_file.txt
+        git commit -m "Update 0.txt"
+        git push
