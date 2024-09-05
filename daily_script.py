@@ -11,9 +11,12 @@ with open('data/output.txt', 'r') as f:
    print(a)
 data = 'hello --- world'
 try:
+   with open('G:/Pictures/临时/IPTV/新疆.txt', 'r') as f:
+       a = f.read()
+       print(a)
    with open('G:/Pictures/临时/IPTV/output.txt', 'w+') as f:
-      f.write(data)
+       f.write(data)
 except:
-      print('写入失败')     
+       print('写入失败')     
 print('hello ---1 world')
 print('hello ---2 world')
