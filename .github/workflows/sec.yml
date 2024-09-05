@@ -1,0 +1,36 @@
+name: Update txt file
+ 
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天凌晨2点执行
+ 
+jobs:
+  update_txt:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+ 
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+ 
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+    - name: Update txt file
+      id: update_file
+      run: |
+        python daily_script.py
+        git config --global user.email "474628725@qq.com"
+        git config --global user.name "smile"
+        git add .
+        git commit -m "Update txt file"
+        git push
+    - name: Send Slack notification
+      if: success()
+      uses: slackapi/github-actions@v2.3.0
+      env:
+        SLACK_ACCESS_TOKEN: ${{ secrets.TOKEN }}
+        SLACK_MESSAGE: "TXT file has been updated successfully!"
