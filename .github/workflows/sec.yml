@@ -1,6 +1,7 @@
 name: Update txt file
  
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'  # 每天凌晨2点执行
  
