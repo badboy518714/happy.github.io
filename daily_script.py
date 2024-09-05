@@ -5,4 +5,4 @@ print('hello world')
 print('hello world')
 print('hello world')
 
-open('out.txt', 'w+').write(f'helloworld{int(time.time()*1000)}')
+open('./output.txt', 'w+').write(f'helloworld{int(time.time()*1000)}')
