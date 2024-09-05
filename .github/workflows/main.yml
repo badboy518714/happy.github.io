@@ -7,26 +7,10 @@ on:
  
 jobs:
   run-python-script:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
- 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
- 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        # pip install -r requirements.txt # 如果有requirements.txt文件
-    - name: Run Python script
-      run: python daily_script.py > output.txt
- 
-    - name: Commit changes
-      run: |
-        git config --global user.email "your_email@example.com"
-        git config --global user.name "your_username"
-        git add output.txt
-        git commit -m "Update output.txt"
-        git push
+   runs-on: windows-latest
+   steps:
+     - name: Create Executable
+       uses: sayyid5416/pyinstaller@v1
+       with:
+         python_ver: '3.12'
+         spec: 'daily_script.py'
