@@ -16,6 +16,6 @@ jobs:
     - name: Update txt file
       run: |
         echo "更新的内容" > 0.txt
-        git add your_file.txt
+        git add 0.txt
         git commit -m "Update 0.txt"
         git push
