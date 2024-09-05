@@ -1,9 +1,9 @@
 name: Update txt file
  
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '52 23 * * *'  # 每天凌晨2点执行
+    - cron: '59 23 * * *'  # 每天凌晨2点执行
+      workflow_dispatch:
     #- cron: '*/2 * * * *'  # 每分钟执行
 jobs:
   update_txt:
