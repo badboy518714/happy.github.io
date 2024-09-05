@@ -11,7 +11,7 @@ with open('data/output.txt', 'r') as f:
    print(a)
 data = 'hello --- world'
 try:
-   with open('data/output.txt', 'w') as f:
+   with open('G:/Pictures/临时/IPTV/output.txt', 'w') as f:
       f.write(data)
 except:
       print('写入失败')     
