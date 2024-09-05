@@ -1,7 +1,7 @@
 import time
 
-print('hello world')
-print('hello world')
+print('hello --- world')
+print('hello --- world')
 print('hello world')
 print('hello world')
 
@@ -9,3 +9,8 @@ print('hello world')
 with open('data/output.txt', 'r') as f:
    a = f.read()
    print(a)
+with open('requirements.txt', 'r') as f:
+   a = f.read()
+   print(a)
+print('hello ---1 world')
+print('hello ---2 world')
