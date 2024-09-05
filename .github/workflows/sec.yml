@@ -15,7 +15,7 @@ jobs:
         git config --global user.name "smile"
     - name: Update txt file
       run: |
-        python update_content.py  # echo "更新的内容" > 0.txt
+        python update.py  # echo "更新的内容" > 0.txt
         git add 0.txt
         git commit -m "Update 0.txt"
         git push
