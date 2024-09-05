@@ -11,8 +11,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setup git
       run: |
-        git config --global user.email "your_email@example.com"
-        git config --global user.name "your_username"
+        git config --global user.email "474628725@qq.com"
+        git config --global user.name "smile"
     - name: Update txt file
       run: |
         echo "更新的内容" > 0.txt
