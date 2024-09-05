@@ -1,25 +1,32 @@
-name: Test github actions # 工作流程的名称
+name: Daily Python Script
  
-on: # 什么时候触发
-  push:  # 当有代码推送时触发
+on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'  # 每5分钟触发一次
+    - cron: '0 12 * * *' # 每天中午12点运行
  
-jobs: # 执行的工作
-  run_demo_actions:
-    runs-on: ubuntu-latest # 在最新版本的 Ubuntu 操作系统环境下运行
-    steps: # 要执行的步骤
-      - name: Checkout code
-        uses: actions/checkout@v3  # 用于将github代码仓库的代码拷贝到工作目录中
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
  
-      - name: Set up Python
-        uses: actions/setup-python@v2 # 用于设置 Python 环境，它允许你指定要在工作环境中使用的 Python 版本
-        with:
-          python-version: '3.9'  # 选择要用的Python版本
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
  
-      - name: Install requirements.txt
-        run: | # 安装依赖包
-          pip install -r ./requirements.txt 
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt # 如果有requirements.txt文件
+    - name: Run Python script
+      run: python daily_script.py > output.txt
  
-      - name: Run main.py
-        run: python main.py # 执行py文件    依据自己代码要运行的py情况而定
+    - name: Commit changes
+      run: |
+        git config --global user.email "your_email@example.com"
+        git config --global user.name "your_username"
+        git add output.txt
+        git commit -m "Update output.txt"
+        git push
