@@ -9,8 +9,8 @@ print('hello world')
 with open('data/output.txt', 'r') as f:
    a = f.read()
    print(a)
-with open('requirements.txt', 'r') as f:
-   a = f.read()
-   print(a)
+data = 'hello --- world'
+with open('data/output.txt', 'w') as f:
+   f.write(data)
 print('hello ---1 world')
 print('hello ---2 world')
