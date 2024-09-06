@@ -35,6 +35,6 @@ with open('xj_tv.m3u', 'w+') as f:
     txt = '#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml","http://epg.51zmt.top:8000/e.xml","http://epg.aptvapp.com/xml","https://epg.pw/xmltv/epg_CN.xml","https://epg.pw/xmltv/epg_HK.xml","https://epg.pw/xmltv/epg_TW.xml"\n\n'
     f.write(txt)
     for data in json_data:
-        print(data)
+        # print(data)
         fullName, playUrl = data["fullName"], data["playUrl"]
         f.write(f'#EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",{fullName}\n{playUrl}\n')
