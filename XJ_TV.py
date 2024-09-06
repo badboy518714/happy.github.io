@@ -30,7 +30,7 @@ params = {
 }
 response = requests.get(url, headers=headers, cookies=cookies, params=params)
 json_data = response.json()
-print(json_data)
+# print(json_data)
 with open('xj_tv.m3u', 'w+') as f:
     txt = '#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml","http://epg.51zmt.top:8000/e.xml","http://epg.aptvapp.com/xml","https://epg.pw/xmltv/epg_CN.xml","https://epg.pw/xmltv/epg_HK.xml","https://epg.pw/xmltv/epg_TW.xml"\n\n'
     f.write(txt)
