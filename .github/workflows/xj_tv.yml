@@ -2,8 +2,8 @@ name: 更新新疆频道
  
 on:
   schedule:
-    # - cron: '59 23 * * *'  # 每天凌晨2点执行
-    - cron: '*/5 * * * *'  # 每分钟执行
+    - cron: '00 20 * * *'  # 每天凌晨2点执行
+    # - cron: '*/5 * * * *'  # 每分钟执行
   workflow_dispatch:
     
 jobs:
