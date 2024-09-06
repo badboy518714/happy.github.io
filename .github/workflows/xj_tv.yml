@@ -12,6 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup git
+      env:
+        GITHUB TOKEN: ${{ secrets.TOKEN }}
       run: |
         git config --global user.email "474628725@qq.com"
         git config --global user.name "smile"
