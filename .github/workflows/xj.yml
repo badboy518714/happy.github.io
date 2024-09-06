@@ -38,7 +38,7 @@ jobs:
           
     - name: 提交更改
       run: |     
-         git pull origin master
+         git pull origin main
          git config --local user.email "474628725@qq.com"
          git config --local user.name "smile"
          git add ./xj_tv.m3u
