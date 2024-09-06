@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   # 定时触发
   schedule:
-    - cron: 30 1,5,10,14,17,22 * * *
+    - cron: 40 1,5,10,14,17,22 * * *
 
 jobs:
   deploy:
@@ -34,7 +34,7 @@ jobs:
         pip install -r requirements.txt
     - name: 执行任务
       run: |
-        python update.py
+        python XJ_TV.py
           
     - name: 提交更改
       run: |     
