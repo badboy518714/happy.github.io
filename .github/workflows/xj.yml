@@ -16,10 +16,8 @@ jobs:
     steps:
     - name: 迁出代码
       uses: actions/checkout@v2
-    - name: 安装Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
+    - uses: actions/checkout@v2
+    - name: Setup git
     - name: 加载缓存  
       uses: actions/cache@v2
       with:
