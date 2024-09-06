@@ -42,7 +42,7 @@ jobs:
          git add ./xj_tv.m3u
          git commit -m "由github actions推送更新新疆频道m3u文件,日期:`date`"
     - name: 推送更改
-      uses:  ad-m/github-push-action@master
+      uses:  ad-m/github-push-action@main
       with:
         github_token: ${{ secrets.TOKEN }}
         branch: main
