@@ -1,8 +1,8 @@
 name: 更新txt
  
 on:
-  schedule:
-    - cron: '59 23 * * *'  # 每天凌晨2点执行
+  # schedule:
+  #   - cron: '59 23 * * *'  # 每天凌晨2点执行
     #- cron: '*/5 * * * *'  # 每分钟执行
   workflow_dispatch:
     
