@@ -18,6 +18,6 @@ jobs:
     - name: Update txt file
       run: |
         python update.py  # echo "更新的内容" > 0.txt
-        git add 0.txt
+        git add .
         git commit -m "Update 0.txt"
         git push
