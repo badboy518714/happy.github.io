@@ -1,24 +1,24 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml","http://epg.51zmt.top:8000/e.xml","http://epg.aptvapp.com/xml","https://epg.pw/xmltv/epg_CN.xml","https://epg.pw/xmltv/epg_HK.xml","https://epg.pw/xmltv/epg_TW.xml"
 
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",新疆卫视
-https://liveplay.xjbs.cn/liveback/xjtvs-01.m3u8?auth_key=1728169887-0-0-79917bb6ed1d41c31ca507695c8d0b91
+https://liveplay.xjbs.cn/liveback/xjtvs-01.m3u8?auth_key=1728256241-0-0-87ae66b1f56a6bb773b4122e530054b9
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",维吾尔语新闻综合频道
-https://liveplay.xjbs.cn/liveback/xjtvs-02.m3u8?auth_key=1728169887-0-0-0464f4196183a7bc464ae8e3eac77481
+https://liveplay.xjbs.cn/liveback/xjtvs-02.m3u8?auth_key=1728256241-0-0-223bcf86477848b03872653a3b5f6d18
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",哈萨克语新闻综合频道
-https://liveplay.xjbs.cn/liveback/xjtvs-03.m3u8?auth_key=1728169887-0-0-0f4697d71d4f83cc69d9641748bf8baf
+https://liveplay.xjbs.cn/liveback/xjtvs-03.m3u8?auth_key=1728256241-0-0-145c94f72c7f529f4d2c89390cbce255
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",汉语综艺频道
-https://liveplay.xjbs.cn/liveback/xjtvs-04.m3u8?auth_key=1728169887-0-0-63d502e157af646d754460b834f83498
+https://liveplay.xjbs.cn/liveback/xjtvs-04.m3u8?auth_key=1728256241-0-0-f0e1f787385706d94c22a39401cb8e70
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",维吾尔语影视频道
-https://liveplay.xjbs.cn/liveback/xjtvs-05.m3u8?auth_key=1728169887-0-0-24697e0243a6a3c327e766cc89960746
+https://liveplay.xjbs.cn/liveback/xjtvs-05.m3u8?auth_key=1728256241-0-0-69d2bc67b84190e292d39a34f55e75fc
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",汉语经济生活频道
-https://liveplay.xjbs.cn/liveback/xjtvs-07.m3u8?auth_key=1728169887-0-0-f3e74f10546aa70b3c37d9ca8ba2a045
+https://liveplay.xjbs.cn/liveback/xjtvs-07.m3u8?auth_key=1728256241-0-0-3f5728f3d4deec08056093f2684fd405
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",哈萨克语综艺频道
-https://liveplay.xjbs.cn/liveback/xjtvs-08.m3u8?auth_key=1728169887-0-0-bde09ea395e5dc899b433500a9e5511f
+https://liveplay.xjbs.cn/liveback/xjtvs-08.m3u8?auth_key=1728256241-0-0-88d1d83578ec05c3abaaa1af26edc88c
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",维吾尔语经济生活频道
-https://liveplay.xjbs.cn/liveback/xjtvs-09.m3u8?auth_key=1728169887-0-0-0dd8ed91c8e2c64aedb0de0d747ec7f0
+https://liveplay.xjbs.cn/liveback/xjtvs-09.m3u8?auth_key=1728256241-0-0-9cfacb5811dc06bd9fec6de3728aa9ae
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",汉语体育健康频道
-https://liveplay.xjbs.cn/liveback/xjtvs-10.m3u8?auth_key=1728169887-0-0-94f0122d3ef3af78c1f3f4fbca6cf190
+https://liveplay.xjbs.cn/liveback/xjtvs-10.m3u8?auth_key=1728256241-0-0-eef4e8160d376fcb8a0a60df3faef6aa
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",汉语信息服务频道
-https://liveplay.xjbs.cn/liveback/xjtvs-11.m3u8?auth_key=1728169887-0-0-1014b4940b91ca9683600bc97544a14b
+https://liveplay.xjbs.cn/liveback/xjtvs-11.m3u8?auth_key=1728256241-0-0-80095a6f153de6c3bf1c39ff9900a45c
 #EXTINF:-1 tvg-logo="https://gitee.com/badboy518/happy/raw/master/res/新疆频道.png" group-title="新疆频道",少儿频道
-https://liveplay.xjbs.cn/liveback/xjtvs-12.m3u8?auth_key=1728169887-0-0-c1682a8a6354d85a5f71333c817ce108
+https://liveplay.xjbs.cn/liveback/xjtvs-12.m3u8?auth_key=1728256241-0-0-2414ebac5ef1bf98e7f2baa26c2f1da6
